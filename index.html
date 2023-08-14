@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Prank Calculator</title>
+</head>
+<body>
+    <div class="title-tag">
+        <h1>Makataong Calculator by: Arocha</h1>
+    </div>
+   <div class="main-box">
+    <div class="inside-box">
+        <form>
+            <div class="tag-name">
+                <h1>DongSkie CalcU</h1>
+            </div>
+            <div class="resulta-height">
+                <input type="text" class="num" id="res" name="text"><br><br>
+            </div>
+            <div>
+                <input type="button" class="button" value="C" onclick="text.value = ''">
+                <input type="button" class="button" value="D" onclick="text.value = text.value.toString().slice(0, -1)">
+                <input type="button" class="button" value="%" onclick="text.value +='%'">
+                <input type="button" class="button" value="." onclick="text.value +='.'">
+                <input type="button" class="button" value="+" onclick="text.value +='+'">
+            </div>
+            <div>
+                <input type="button" class="button" value="9" onclick="text.value +='9'">
+                <input type="button" class="button" value="8" onclick="text.value +='8'">
+                <input type="button" class="button" value="7" onclick="text.value +='7'">
+                <input type="button" class="button" value="6" onclick="text.value +='6'">
+                <input type="button" class="button" value="-" onclick="text.value +='-'">
+            </div>
+            <div>
+                <input type="button" class="button" value="5" onclick="text.value +='5'">
+                <input type="button" class="button" value="4" onclick="text.value +='4'">
+                <input type="button" class="button" value="3" onclick="text.value +='3'">
+                <input type="button" class="button" value="2" onclick="text.value +='2'">
+                <input type="button" class="button" value="x" onclick="text.value +='*'">
+            </div>
+            <div>
+                <input type="button" name="button3" value="1" onclick="text.value +='1'">
+                <input type="button" name="button2" value="0" onclick="text.value +='0'">
+                <input type="button" name="button1" value="÷" onclick="text.value += '/'">
+                <input type="button" class="result" value="=" onclick="text.value = eval(text.value)">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
